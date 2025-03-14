@@ -1,0 +1,55 @@
+body{
+color: rgb(37, 37, 37);
+background-color: #d2e4e8;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+
+} 
+
+input{
+    width: 100%;
+    border-radius: 5px;
+}
+
+button{
+
+background-color: rgb(165, 165, 165);
+border-radius: 5px;
+width: 25%;
+position: absolute;
+top: 100%;
+left: 37%;
+
+
+}
+.caixa{
+    border-radius: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #e8f1f4;
+    width: 600px;
+    padding: 20px;
+}
+
+.sexo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tabela{
+ position: absolute;
+  top: 110%;
+  left: 18%;
+  border-style: outset;
+  border-color: black;
+
+  }
+  td{
+border-style: solid;
+border-color: black;
+
+  }
+
+ 

@@ -1,55 +1,125 @@
-body{
-color: rgb(37, 37, 37);
-background-color: #d2e4e8;
-font-family: Verdana, Geneva, Tahoma, sans-serif;
-
-
-} 
-
-input{
-    width: 100%;
-    border-radius: 5px;
+* {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
 }
 
-button{
-
-background-color: rgb(165, 165, 165);
-border-radius: 5px;
-width: 25%;
-position: absolute;
-top: 100%;
-left: 37%;
-
-
-}
-.caixa{
-    border-radius: 10px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    background-color: #e8f1f4;
-    width: 600px;
-    padding: 20px;
+body {
+  color: rgb(37, 37, 37);
+  background-color: #d2e4e8;
 }
 
-.sexo{
-    display: flex;
-    justify-content: space-between;
+#data-curriculo {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: row;
 }
 
-.tabela{
- position: absolute;
-  top: 110%;
-  left: 18%;
-  border-style: outset;
-  border-color: black;
+#date {
+  width: 19%;
+  height: 20%;
+}
 
+#local {
+  display: flex;
+  justify-content: space-between;
+}
+
+#item-local {
+  display: flex;
+  flex-direction: column;
+}
+#local select {
+  width: 15vw;
+}
+
+input {
+  width: 100%;
+  border: none;
+  background: white;
+  border-radius: 5px;
+}
+
+#botao {
+  background-color: rgb(9, 141, 119);
+  padding: 9px;
+  color: rgb(255, 255, 255);
+}
+
+#botao:hover {
+  background-color: rgb(9, 250, 198);
+  color: black;
+}
+
+.caixa {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  border-radius: 10px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #e8f1f4;
+  width: 600px;
+  padding: 20px;
+}
+
+.sexo {
+  display: flex;
+  justify-content: space-between;
+}
+
+#registro {
+  display: flex;
+  justify-content: space-between;
+}
+
+#registro input {
+  width: 45%;
+}
+#m,#f,#o {
+  width: 20px;
+}
+@media screen and (min-width: 1200px){
+    #local select {
+      width: 10vw;
+    }
+}
+@media (max-width: 900px) {
+  * {
+    font-size: 12px;
+    gap: 20px;
   }
-  td{
-border-style: solid;
-border-color: black;
 
+  .caixa {
+    width: 80%;
+  }
+  #curriculo {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .caixa {
+    width: 90%;
+  }
+  #curriculo {
+    font-size: 20px;
   }
 
- 
+}
+
+@media (max-width: 320px) {
+
+  #curriculo {
+    font-size: 12px;
+  }
+  .titulo {
+    font-size: 12px;
+  }
+
+  .sexo label {
+    font-size: 12px;
+  }
+}
+

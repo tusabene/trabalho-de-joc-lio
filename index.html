@@ -1,74 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Currículo</title>
-    <link rel="stylesheet" href="style.css">
- </head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-  <center> <h1> Meu Currículo</h1>  </center>
-    
+  <body>
+    <div class="caixa">
+      <div id="data-curriculo">
+        <h4 id="curriculo">Crie seu currículo</h4>
+        <input id="date" type="date" />
+      </div>
 
-  <div class="caixa">
-   <center> <h2> registros </h2> </center>
+      <h5 class="titulo">Registros</h5>
 
-    Cpf: 
-     <p> <input type="number"> </p>
-    
-     <p> <input id="date" type="date" /> </p> 
+      <div id="registro">
+        <input type="number" placeholder="Cpf" />
+        <input type="text" placeholder=" Nome da escola/ Universidade" />
+      </div>
 
-     N:
-     <P> <input type="text"></P>
+      <h5 class="titulo">Pessoal</h5>
 
-     
+      <input placeholder=" Nome completo" />
+      <input type="number" placeholder=" Número de telefone" />
 
+      <div id="local">
+        <div class="item-local">
+          <p><label for="">País</label></p>
+          <select name="" id="nacionalidade">
+            <option>-------</option>
+            <option>Brasil</option>
+          </select>
+        </div>
 
-   <center><h4> Pessoal</h4> </center>
-    Nome completo 
-   <p> <input> </p>
-    Cidade
-    <p> <input> </p>
-    Nacionalidade
-    <p> <input> </p>
-    
+        <div class="item-local">
+          <p>estado</p>
+          <select name="" id="Estado">
+            <option>-------</option>
+            <option>CE</option>
+            <option>RN</option>
+          </select>
+        </div>
 
+        <div class="item-local">
+          <p>Cidade</p>
+          <select name="Cidade" id="Cidade">
+            <option>-------</option>
+            <option>Icapuí</option>
+            <option>Mossoró</option>
+            <option>Aracati</option>
+            <option></option>
+          </select>
+        </div>
+      </div>
 
-    <div class="sexo">
-      Masculino<input type="radio" name="sexo">
-      Feminino<input type="radio" name="sexo">
-      Outro<input type="radio" name="sexo">
-      <button> gerar </button>
-       
+      <div class="sexo">
+        <div id="item-m">
+          <label for="m">Masculino</label>
+          <input type="radio" name="sexo" id="m" />
+        </div>
+
+        <div id="item-f">
+          <label for="f">Feminino</label>
+          <input type="radio" name="sexo" id="f" />
+        </div>
+
+        <div id="item-o">
+          <label for="o">Outro</label>
+          <input type="radio" name="sexo" id="o" />
+        </div>
+      </div>
+
+      <input id="botao" type="submit" value="Enviar" />
     </div>
-
-    <table class="tabela"> 
-    <tr> 
-      <th colspan="2"> Entre em contato </th>
-      
-    </tr>
-    <tr> 
-      <td> Email</td> 
-      <td> www.curriculosonline.com.br </td>
-      
-    </tr> 
-      <td> Telefone </td>
-      <td> (34) 4002-8922 </td>
-    </tr>
-    <tr> 
-      <td> Instagram </td>
-      <td> @Curriculos_online33 </td>
-    </tr>
-
-   
-
-   
-</table>
-
-
-
-</body>
-
-
+  </body>
 </html>
